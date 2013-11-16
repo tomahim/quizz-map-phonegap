@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id="quizzmap"
+        version="0.0.1">
+
+	<name>QuizzMap</name>
+
+	<description>
+		A sample Apache Cordova application that responds to the deviceready event.
+	</description>
+
+	<author email="email@domain.com" href="http://example.com/">
+		Author
+	</author>
+
+	<feature name="http://api.phonegap.com/1.0/device" />
+
+	<preference name="permissions" value="none" />
+
+	<preference name="phonegap-version" value="3.1.0" />
+
+	<preference name="orientation" value="default" />
+
+	<preference name="fullscreen" value="true" />
+
+	<preference name="webviewbounce" value="true" />
+
+	<preference name="target-device" value="universal" />
+
+	<!-- ios -->
+	<preference name="prerendered-icon" value="true" />
+	<preference name="stay-in-webview" value="false" />
+
+	<access origin="*" />
+</widget>
