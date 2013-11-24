@@ -1,0 +1,13 @@
+/*** General ***/
+
+body {
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body #map-container, body #map {
+	z-index:1;
+	height: 100%;
+	width: 100%;
+}

@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mapquizz">
 	<head>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
 		<title>QuizzMap</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="stylesheet" href="assets/components/leaflet/leaflet.css"/>
 		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap-theme.min.css" />
 	</head>
-	<body>
-		<div class="app container">
-			<a href="http://tomarea.fr/">
-				<img src="http://tomarea.fr/wp-content/uploads/2013/09/logo-28-08-2013.png" width="300" height="77" alt="TomArea">
-			</a>
-			<!-- start building -->
+	<body ng-controller="AppCtrl" ng-init="init()">
+		<leaflet center="center" markers="markers" layers="layers" id="map" width="500px" height="500px"></leaflet>
 
-		</div>
+		<!-- leaflet -->
+		<script src="assets/components/leaflet/leaflet.js"></script>
+
+		<!-- angular -->
+		<script src="assets/components/angular/angular.min.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/components/angular-leaflet/dist/angular-leaflet-directive.min.js"></script>
+		<script src="assets/js/services.js"></script>
+		<script src="assets/js/directives.js"></script>
+		<script src="assets/js/controllers/AppCtrl.js"></script>
+
+		<script src="assets/components/underscore/underscore-min.js"></script>
+		<script src="assets/components/angular/angular.min.js"></script>
 		<script type="text/javascript" src="phonegap.js"></script>
 		<script src="assets/components/jquery/jquery.min.js"></script>
 		<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>

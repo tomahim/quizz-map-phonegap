@@ -2,6 +2,10 @@
   "name": "package",
   "version": "0.0.0",
   "dependencies": {
-  	"jquery" :  ">= 2.0.0"
+    "jquery": ">= 2.0.0",
+    "angular": "~1.2.2",
+    "underscore": "~1.5.2",
+    "angular-leaflet": "~0.6.1",
+    "leaflet": "~0.6.4"
   }
 }
